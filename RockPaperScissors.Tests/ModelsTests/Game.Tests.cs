@@ -18,8 +18,16 @@ namespace RockPaperScissors.Tests
     public void Rochambeau_CheckDraw_Draw()
     {
       Rochambeau theGame = new Rochambeau();
-      string result = Rochambeau.CheckDraw("rock", "rock");
+      string result = Rochambeau.CheckResult("rock", "rock");
       Assert.AreEqual(result, "draw");
+    }
+
+    [TestMethod]
+    public void Rohambeau_CheckWinner_GameWinner()
+    {
+      Rochambeau theGame = new Rochambeau();
+      string result = Rochambeau.CheckResult("rock", "scissors");
+      Assert.AreEqual(result, "player1 wins");
     }
   }
 }
