@@ -23,7 +23,7 @@ namespace RockPaperScissors.Tests
     }
 
     [TestMethod]
-    public void Rohambeau_CheckWinner_GameWinner()
+    public void Rochambeau_CheckWinner_GameWinner()
     {
       Rochambeau theGame = new Rochambeau();
       string result = Rochambeau.CheckResult("rock", "scissors");
@@ -36,7 +36,5 @@ namespace RockPaperScissors.Tests
       Assert.AreEqual(result, "player1 wins");
 
     }
-
-
   }
 }
