@@ -28,6 +28,15 @@ namespace RockPaperScissors.Tests
       Rochambeau theGame = new Rochambeau();
       string result = Rochambeau.CheckResult("rock", "scissors");
       Assert.AreEqual(result, "player1 wins");
+
+      result = Rochambeau.CheckResult("scissors", "paper");
+      Assert.AreEqual(result, "player1 wins");
+
+      result = Rochambeau.CheckResult("paper", "rock");
+      Assert.AreEqual(result, "player1 wins");
+
     }
+
+
   }
 }
